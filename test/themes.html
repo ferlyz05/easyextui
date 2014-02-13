@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Untitled</title>
-    <link rel="stylesheet" href="css/neptune.css">
+    <link rel="stylesheet" href="../css/neptune.css">
 </head>
 <body style="margin:72px 0px 36px 0px;">
 	<div class="row">
@@ -436,8 +436,8 @@
 			<div class="icon-close icon-dark"></div>
 		</div>
 	</div>
-    <script src="js/jquery.js"></script>
-    <script src="js/easyui.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/easyui.js"></script>
     <script>
     	var value = 0;
     	window.setInterval(function() {
@@ -450,7 +450,7 @@
     	var c = $('#theme-close');
     	b.combobox({
     		onSelect: function(e) {
-    			$('link').attr('href', 'css/'+e.value);
+    			$('link').attr('href', '../css/'+e.value);
     		}
     	});
     	c.bind('click', function(e) {
