@@ -1074,11 +1074,11 @@ img {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
-  -webkit-box-shadow: rgba(136, 136, 136, 0.3) 0 1px 2px;
-  -moz-box-shadow: rgba(136, 136, 136, 0.3) 0 1px 2px;
-  -ms-box-shadow: rgba(136, 136, 136, 0.3) 0 1px 2px;
-  -o-box-shadow: rgba(136, 136, 136, 0.3) 0 1px 2px;
-  box-shadow: rgba(136, 136, 136, 0.3) 0 1px 2px; }
+  -webkit-box-shadow: rgba(136, 136, 136, 0.6) 0 1px 3px;
+  -moz-box-shadow: rgba(136, 136, 136, 0.6) 0 1px 3px;
+  -ms-box-shadow: rgba(136, 136, 136, 0.6) 0 1px 3px;
+  -o-box-shadow: rgba(136, 136, 136, 0.6) 0 1px 3px;
+  box-shadow: rgba(136, 136, 136, 0.6) 0 1px 3px; }
 
 .window, .window .window-body {
   border-color: #df606c; }
@@ -1187,7 +1187,12 @@ input, label, select, textarea {
   font-family: inherit; }
 
 label {
-  padding: 4px 0; }
+  padding: 4px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
 
 input, select, textarea {
   border: 1px solid #d9d9d9;
@@ -1286,8 +1291,8 @@ legend {
 
 .combobox-group, .combobox-item {
   font-size: 13px;
-  padding: 3px;
-  padding-right: 0; }
+  line-height: 24px;
+  padding: 0 6px; }
 
 .combobox-item-disabled {
   opacity: .5;
@@ -2834,11 +2839,11 @@ legend {
 
 .menu-shadow {
   position: absolute;
-  -webkit-box-shadow: rgba(136, 136, 136, 0.3) 0 1px 2px;
-  -moz-box-shadow: rgba(136, 136, 136, 0.3) 0 1px 2px;
-  -ms-box-shadow: rgba(136, 136, 136, 0.3) 0 1px 2px;
-  -o-box-shadow: rgba(136, 136, 136, 0.3) 0 1px 2px;
-  box-shadow: rgba(136, 136, 136, 0.3) 0 1px 2px; }
+  -webkit-box-shadow: rgba(136, 136, 136, 0.6) 0 1px 3px;
+  -moz-box-shadow: rgba(136, 136, 136, 0.6) 0 1px 3px;
+  -ms-box-shadow: rgba(136, 136, 136, 0.6) 0 1px 3px;
+  -o-box-shadow: rgba(136, 136, 136, 0.6) 0 1px 3px;
+  box-shadow: rgba(136, 136, 136, 0.6) 0 1px 3px; }
 
 .menu-line {
   border-left: 1px solid #e1e1e1; }
