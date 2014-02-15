@@ -2044,6 +2044,7 @@ legend {
   background: white; }
 
 .datagrid-mask-msg {
+  height: auto !important;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2055,7 +2056,7 @@ legend {
   background-image: url(../img/loading.gif);
   background-repeat: no-repeat;
   background-position: center top;
-  padding-top: 24px;
+  padding-top: 16px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
