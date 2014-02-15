@@ -1,415 +1,319 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>EasyExtUI 1.0.2</title>
-    <link rel="stylesheet" href="css/neptune.css">
+<meta charset="utf-8">
+<title>EASYEXT 1.0.3</title>
+<!-- <link rel="stylesheet" href="css/aqua.css"> -->
+<!-- <link rel="stylesheet" href="css/bittersweet.css"> -->
+<!-- <link rel="stylesheet" href="css/dark.css"> -->
+<!-- <link rel="stylesheet" href="css/easyui.css"> -->
+<!-- <link rel="stylesheet" href="css/grapefruit.css"> -->
+<!-- <link rel="stylesheet" href="css/grass.css"> -->
+<!-- <link rel="stylesheet" href="css/lavender.css"> -->
+<!-- <link rel="stylesheet" href="css/mint.css"> -->
+<!-- <link rel="stylesheet" href="css/jeans.css"> -->
+<link rel="stylesheet" href="css/neptune.css">
+<!-- <link rel="stylesheet" href="css/rose.css"> -->
 </head>
-<body style="margin:72px 0px 36px 0px;">
+<body style="margin:10px 0;">
 	<div class="row">
-		<div class="col-22 push-1">
+		<div class="col-20 push-2">
 			<div class="row">
-				<div class="col-14" style="margin-bottom:10px;">
+				<div class="col-24" style="margin-bottom:10px;">
+					<div id="theme">
+						<img src="icon/ui/1.png" alt="aqua" title="Aqua" style="width:9.090909090909092%;height:auto;float:left;cursor:pointer;">
+						<img src="icon/ui/2.png" alt="bittersweet" title="Bittersweet" style="width:9.090909090909092%;height:auto;float:left;cursor:pointer;">
+						<img src="icon/ui/3.png" alt="dark" title="Dark" style="width:9.090909090909092%;height:auto;float:left;cursor:pointer;">
+						<img src="icon/ui/4.png" alt="easyui" title="Easyui" style="width:9.090909090909092%;height:auto;float:left;cursor:pointer;">
+						<img src="icon/ui/5.png" alt="grapefruit" title="Grapefruit" style="width:9.090909090909092%;height:auto;float:left;cursor:pointer;">
+						<img src="icon/ui/6.png" alt="grass" title="Grass" style="width:9.090909090909092%;height:auto;float:left;cursor:pointer;">
+						<img src="icon/ui/7.png" alt="lavender" title="Lavender" style="width:9.090909090909092%;height:auto;float:left;cursor:pointer;">
+						<img src="icon/ui/8.png" alt="mint" title="Mint" style="width:9.090909090909092%;height:auto;float:left;cursor:pointer;">
+						<img src="icon/ui/9.png" alt="jeans" title="Jeans" style="width:9.090909090909092%;height:auto;float:left;cursor:pointer;">
+						<img src="icon/ui/10.png" alt="neptune" title="Neptune" style="width:9.090909090909092%;height:auto;float:left;cursor:pointer;">
+						<img src="icon/ui/11.png" alt="rose" title="Rose" style="width:9.090909090909092%;height:auto;float:left;cursor:pointer;">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-14">
 					<div class="row">
-						<div class="col-6" style="margin-bottom:10px;">
-							<div class="x-panel" title="Basic Panel" border="false" style="height:125px;padding:5px 10px;">Some content</div>
-							<div style="height:10px"></div>
-							<div class="x-panel" title="Collapsed Panel" border="false" collapsible="true" collapsed="true" style="height:125px;padding:5px 10px;">Some content</div>
+						<div class="col-5" style='margin-bottom:10px;'>
+							<div class="x-panel" border="false" title="Basic Panel" style="height:125px;padding:5px;">Some content</div>
+							<div style="height:10px;"></div>
+							<div class="x-panel" border="false" title="Collapsed Panel" collapsible="true" collapsed="true" style="height:125px;padding:5px;">Some content</div>
 						</div>
-						<div class="col-5" style="margin-bottom:10px;">
-							<div class="x-panel" title="Masked Panel" border="false" collapsible="true" href="x.html" style="height:260px;padding:5px 10px;">Some content</div>
+						<div class="col-5" style='margin-bottom:10px;'>
+							<div class="x-panel" border="false" title="Masked Panel" collapsible="true" href="x.html" style="height:260px;padding:5px;">Some content</div>
 						</div>
-						<div class="col-7" style="margin-bottom:10px;">
-							<div class="x-panel" title="Framed Panel" border="false" frame="true" style="height:150px;">Some content
-								<div class="x-toolbar" position="top" >
+						<div class="col-8" style='margin-bottom:10px;'>
+							<div class="x-panel" border="false" title="Framed Panel" frame="true" style="height:150px;padding:5px;width:211px;">
+								Some content
+								<div class="x-toolbar" position="top">
 									<a href="" class="x-linkbutton">test</a>
 								</div>
-								<div class="x-toolbar" position="left"  style="top:36px;">
+								<div class="x-toolbar" position="left">
 									<a href="" class="x-linkbutton">test A</a>
 								</div>
-								<div class="x-toolbar" position="right"  style="top:36px;">
+								<div class="x-toolbar" position="right">
 									<a href="" class="x-linkbutton">test B</a>
 								</div>
 							</div>
-							<div style="height:10px"></div>
-							<div class="x-panel" title="Collapsed Framed Panel" border="false" frame="true" collapsible="true" collapsed="true" style="height:100px;padding:5px;">Some content</div>
+							<div style="height:10px;"></div>
+							<div class="x-panel" border="false" title="Collapsed Framed Panel" frame="true" collapsible="true" collapsed="true" style="height:100px;padding:5px;width:211px;">Some content</div>
 						</div>
-						<div class="col-6" style="margin-bottom:10px;">
-							<div class="x-panel" title="Window" shadow="false" modal="false" inline="true" border="false" frame="true" collapsible="true" style="height:260px;width:175px;padding:5px;">Click Submit for Confirmation Msg.
-							<div class="x-toolbar" position="top" >
-								<a href="" class="x-linkbutton">Toolbar</a>
-							</div>
-							<div class="x-toolbar dialog-button" position="bottom">
-								<a href="javascript:void(0)" onclick="$.messager.alert('Title','Lorem ipsum dolor sit amet.', 'question')" class="x-linkbutton">Submit</a>
-							</div>
+						<div class="col-6" style='margin-bottom:10px;'>
+							<div class="x-panel" border="false" title="Window" frame="true" collapsible="true" style="height:260px;padding:5px;">
+							Click Submit for Confirmation Msg.
+								<div class="x-toolbar" position="top">
+									<a href="" class="x-linkbutton">Toolbar</a>
+								</div>
+								<div class="x-toolbar" position="bottom" plain="false" style="text-align:right;">
+									<a href="javascript:void()" onclick="$.messager.alert('Confirm', 'Are you sure you want to do that?', 'question')" class="x-linkbutton">Submit</a>
+								</div>
 							</div>
 						</div>
 						<div class="col-24" style="margin-bottom:10px;">
-							<div class="x-panel" title="Form Widgets" tools="#tools" border="false" frame="true" style="height:750px;padding:5px 30px;">
-								<div class="row">
-									<div class="col-24"><label>Plain Label</label></div>
-								</div>
-								<div class="row"style="margin-bottom:5px;">
-									<div class="col-4"><label>TextField:</label></div>
-									<div class="col-20"><input type="text" placeholder="Enter a value"></div>
-								</div>
-								<div class="row"style="margin-bottom:5px;">
-									<div class="col-4"><label>ComboBox:</label></div>
-									<div class="col-20">
-										<select name="" id="" class="x-combobox">
-											<option value="1">Lorem</option>
-											<option value="2">Consequuntur</option>
-											<option value="3">Mollitia</option>
-											<option value="4">Reprehenderit</option>
-											<option value="5">Repellat</option>
-											<option value="6">Inventore</option>
-											<option value="7">Ad</option>
-											<option value="8">Labore</option>
-											<option value="9">Hic</option>
-											<option value="10">Dolorem</option>
-										</select>
+							<div class="x-panel" title="Form Widget" frame="true" tools="#formTool" border="false" style="height:750px;padding:10px 20px;">
+								<form>
+									<div class="row">
+										<div class="col-5"><label>Plain Label</label></div>
 									</div>
-								</div>
-								<div class="row"style="margin-bottom:5px;">
-									<div class="col-4"><label>DateField:</label></div>
-									<div class="col-20"><input type="text" class="x-datebox"></div>
-								</div>
-								<div class="row"style="margin-bottom:5px;">
-									<div class="col-4"><label>TimeField:</label></div>
-									<div class="col-20"><input type="text" class="x-timespinner"></div>
-								</div>
-								<div class="row"style="margin-bottom:5px;">
-									<div class="col-4"><label>NumberField:</label></div>
-									<div class="col-20"><input type="text" class="x-numberspinner" placeholder="(This field is optional)"></div>
-								</div>
-								<div class="row"style="margin-bottom:5px;">
-									<div class="col-4"><label>TextArea:</label></div>
-									<div class="col-20"><textarea name="" id="" cols="30" rows="5">This field is hard-coded to have the "valid" style (it will require some code changes to add/remove this style dynamically)</textarea></div>
-								</div>
-								<div class="row"style="margin-bottom:5px;">
-									<div class="col-4"><label>Checkboxes:</label></div>
-									<div class="col-20">
-										<div class="row">
-											<div class="col-6">
-												<input type="checkbox" title="Foo">
-											</div>
-											<div class="col-6">
-												<input type="checkbox" title="Bar">
+									<div class="row" style="margin-bottom:5px;">
+										<div class="col-5"><label>TextField:</label></div>
+										<div class="col-19"><input type="text" placeholder="Enter a value"></div>
+									</div>
+									<div class="row" style="margin-bottom:5px;">
+										<div class="col-5"><label>ComboBox:</label></div>
+										<div class="col-19"><select class="x-combobox">
+											<option value="1">Value 1</option>
+											<option value="2">Value 2</option>
+											<option value="3">Value 3</option>
+											<option value="4">Value 4</option>
+											<option value="5">Value 5</option>
+										</select></div>
+									</div>
+									<div class="row" style="margin-bottom:5px;">
+										<div class="col-5"><label>DateField:</label></div>
+										<div class="col-19"><input type="text" class="x-datebox"></div>
+									</div>
+									<div class="row" style="margin-bottom:5px;">
+										<div class="col-5"><label>TimeField:</label></div>
+										<div class="col-19"><input type="text" class="x-timespinner"></div>
+									</div>
+									<div class="row" style="margin-bottom:5px;">
+										<div class="col-5"><label>NumberField:</label></div>
+										<div class="col-19"><input type="text" class="x-numberspinner" placeholder="(This field is optional)"></div>
+									</div>
+									<div class="row" style="margin-bottom:5px;">
+										<div class="col-5"><label>TextArea:</label></div>
+										<div class="col-19"><textarea rows="4">This field is hard-coded to have the "valid" style (it will require some code changes to add/remove this style dynamically)</textarea></div>
+									</div>
+									<div class="row" style="margin-bottom:5px;">
+										<div class="col-5"><label>Chekboxes:</label></div>
+										<div class="col-19">
+											<div class="row">
+												<div class="col-4"><input type="checkbox" title="Foo"></div>
+												<div class="col-4"><input type="checkbox" title="Bar"></div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="row"style="margin-bottom:5px;">
-									<div class="col-4"><label>Radios:</label></div>
-									<div class="col-20">
-										<div class="row">
-											<div class="col-6">
-												<input type="radio" title="Foo" name="radio">
-											</div>
-											<div class="col-6">
-												<input type="radio" title="Bar" name="radio">
+									<div class="row" style="margin-bottom:5px;">
+										<div class="col-5"><label>Radios:</label></div>
+										<div class="col-19">
+											<div class="row">
+												<div class="col-4"><input type="radio" title="Foo" name="radio1"></div>
+												<div class="col-4"><input type="radio" title="Bar" name="radio1"></div>
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="row"style="margin-bottom:5px;">
-									<div class="col-24"><textarea name="" id="" cols="30" rows="5"></textarea></div>
-								</div>
-								<div class="row"style="margin-bottom:5px;">
-									<div class="col-24">
-										<fieldset>
-											<legend>Legend</legend>
-											<div class="row">
-												<div class="col-12">
-													<input type="checkbox" title="Foo">
-												</div>
-												<div class="col-12">
-													<input type="checkbox" title="Bar">
-												</div>
-											</div>
-										</fieldset>
+									<div class="row" style="margin-bottom:5px;">
+										<div class="col-24">
+											<div class="x-textarea" style="height:120px;">This field is hard-coded to have the "valid" style (it will require some code changes to add/remove this style dynamically)</div>
+										</div>
 									</div>
-								</div>
-								<div class="row"style="margin-bottom:5px;">
-									<div class="col-24">
-										<fieldset>
-											<legend>Legend</legend>
-											<div class="row">
-												<div class="col-24" style="margin-bottom:5px;">
-													<input type="checkbox" title="Foo">
+									<div class="row" style="margin-bottom:5px;">
+										<div class="col-24">
+											<fieldset>
+												<legend>Plain Fieldset</legend>
+												<div class="row">
+													<div class="col-12"><input type="checkbox" title="Foo"></div>
+													<div class="col-12"><input type="radio" title="Bar"></div>
 												</div>
-												<div class="col-24">
-													<input type="checkbox" title="Bar">
-												</div>
-											</div>
-										</fieldset>
+											</fieldset>
+										</div>
 									</div>
-								</div>
-								<div class="row">
-									<div class="col-24">
-										<fieldset>
-											<legend>Legend</legend>
-											<div class="row">
-												<div class="col-24" style="margin-bottom:5px;">
-													<input type="radio" title="Foo" name="radio1">
+									<div class="row" style="margin-bottom:5px;">
+										<div class="col-24">
+											<fieldset>
+												<legend>Plain Fieldset</legend>
+												<div class="row">
+													<div class="col-24"><input type="radio" title="Foo" name="radio"></div>
+													<div class="col-24"><input type="radio" title="Bar" name="radio"></div>
 												</div>
-												<div class="col-24">
-													<input type="radio" title="Bar" name="radio1">
-												</div>
-											</div>
-										</fieldset>
+											</fieldset>
+										</div>
 									</div>
-								</div>
-								<div class="x-toolbar dialog-button" position="bottom">
-									<a href="" class="x-linkbutton">Toggle Enable</a>
-									<a href="" class="x-linkbutton">Reset Form</a>
-									<a href="" class="x-linkbutton">Validate</a>
+									<div class="row" style="margin-bottom:5px;">
+										<div class="col-24">
+											<fieldset>
+												<legend>Plain Fieldset</legend>
+												<div class="row">
+													<div class="col-24"><input type="checkbox" title="Foo"></div>
+													<div class="col-24"><input type="checkbox" title="Bar"></div>
+												</div>
+											</fieldset>
+										</div>
+									</div>
+								</form>
+								<div class="x-toolbar" position="bottom" plain="false" style="text-align:right;">
+									<div class="x-linkbutton">Toggle Enambled</div>
+									<div class="x-linkbutton">Reset Form</div>
+									<div class="x-linkbutton">Validate</div>
 								</div>
 							</div>
-							<div id="tools">
-								<a href="" class="icon-expand-top"></a>
-								<a href="" class="icon-toggle"></a>
+							<div id="formTool">
 								<a href="" class="icon-close"></a>
-								<a href="" class="icon-minus"></a>
-								<a href="" class="icon-restore"></a>
-								<a href="" class="icon-maximize"></a>
-								<a href="" class="icon-gear"></a>
-								<a href="" class="icon-pin"></a>
-								<a href="" class="icon-unpin"></a>
-								<a href="" class="icon-up"></a>
-								<a href="" class="icon-right"></a>
-								<a href="" class="icon-expand-left"></a>
+								<a href="" class="icon-down"></a>
 								<a href="" class="icon-expand-bottom"></a>
-								<a href="" class="icon-refresh"></a>
-								<a href="" class="icon-minimize"></a>
-								<a href="" class="icon-plus"></a>
+								<a href="" class="icon-expand-left"></a>
+								<a href="" class="icon-expand-right"></a>
+								<a href="" class="icon-expand-top"></a>
+								<a href="" class="icon-gear"></a>
 								<a href="" class="icon-help"></a>
-								<a href="" class="icon-search"></a>
-								<a href="" class="icon-save"></a>
+								<a href="" class="icon-left"></a>
+								<a href="" class="icon-maximize"></a>
+								<a href="" class="icon-minimize"></a>
+								<a href="" class="icon-minus"></a>
+								<a href="" class="icon-next"></a>
+								<a href="" class="icon-pin"></a>
+								<a href="" class="icon-plus"></a>
+								<a href="" class="icon-prev"></a>
 								<a href="" class="icon-print"></a>
+								<a href="" class="icon-refresh"></a>
+								<a href="" class="icon-restore"></a>
+								<a href="" class="icon-right"></a>
+								<a href="" class="icon-save"></a>
+								<a href="" class="icon-toggle"></a>
+								<a href="" class="icon-unpin"></a>
 							</div>
 						</div>
 						<div class="col-12" style="margin-bottom:10px;">
-							<div class="x-tabs" border="false" style="height:115px;">
-								<div title="Tab 1">Tab panel 1 content</div>
-								<div title="Tab 2" closable="true">Tab panel 2 content</div>
-								<div title="Tab 3" closable="true">Tab panel 3 content</div>
-								<div title="Tab 4" closable="true">Tab panel 4 content</div>
-								<div title="Tab 5" closable="true">Tab panel 5 content</div>
-								<div title="Tab 6" closable="true">Tab panel 6 content</div>
-								<div title="Tab 7" closable="true">Tab panel 7 content</div>
-								<div title="Tab 8" closable="true">Tab panel 8 content</div>
-								<div title="Tab 9" closable="true">Tab panel 9 content</div>
-								<div title="Tab 10" closable="true">Tab panel 10 content</div>
+							<div class="x-tabs" border="false" tabPosition="top" style="height:150px;">
+								<div style="padding:10px;" title="Tab 1">Tab panel 1 content</div>
+								<div style="padding:10px;" title="Tab 2" closable="true">Tab panel 2 content</div>
+								<div style="padding:10px;" title="Tab 3" closable="true">Tab panel 3 content</div>
+								<div style="padding:10px;" title="Tab 4" closable="true">Tab panel 4 content</div>
+								<div style="padding:10px;" title="Tab 5" closable="true">Tab panel 5 content</div>
+								<div style="padding:10px;" title="Tab 6" closable="true">Tab panel 6 content</div>
+								<div style="padding:10px;" title="Tab 7" closable="true">Tab panel 7 content</div>
+								<div style="padding:10px;" title="Tab 8" closable="true">Tab panel 8 content</div>
+								<div style="padding:10px;" title="Tab 9" closable="true">Tab panel 9 content</div>
 							</div>
 						</div>
 						<div class="col-12" style="margin-bottom:10px;">
-							<div class="x-tabs" border="false" plain="true" style="height:115px;">
-								<div title="Tab 1">Free-standing tab panel</div>
-								<div title="Tab 2" closable="true">Free-standing tab panel</div>
-								<div title="Tab 3" closable="true">Free-standing tab panel</div>
+							<div class="x-tabs" border="false" plain="true" tabPosition="top" style="height:150px;">
+								<div style="padding:10px;" title="Tab 1">Free-standing tab panel</div>
+								<div style="padding:10px;" title="Tab 2" closable="true"></div>
+								<div style="padding:10px;" title="Tab 3" closable="true"></div>
+								<div style="padding:10px;" title="Tab 4" closable="true"></div>
 							</div>
 						</div>
 						<div class="col-8" style="margin-bottom:10px;">
-							<div class="x-panel" bodyCls="panel-calendar" border="false" style="height:239px;width:214px;">
+							<div class="x-panel" bodyCls="datebox-border" style="height:239px;width:214px;">
 								<div class="x-calendar" border="false"></div>
-								<div class="datebox-button" style="text-align:center;">
+								<div class="datebox-button">
 									<a href="">Today</a>
 								</div>
 							</div>
 						</div>
-						<div class="col-16" style="margin-bottom:10px;">
-							<div class="x-resizable resizable" style="width:490px;height:220px;left:-18px;">Resizable handles</div>
+						<div class="col-16" style="margin-bottom:10px;padding-left:10px;">
+							<div class="resizer x-resizable" style="height:220px;">Resizable handles</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-10" style="margin-bottom:10px;">
+				<div class="col-10">
 					<div class="row">
-						<div class="col-24" style="margin-bottom:10px;">
-							<div class="x-panel" title="Basic Panel With Toolbars" collapsible="true" border="false" style="height:260px;">
-								<div class="x-toolbar" position="top" >
+						<div class="col-24" style='margin-bottom:10px;'>
+							<div class="x-panel" border="false" title="Basic Panel With Toolbar" collapsible="true" style="height:260px;padding:5px;">
+								<div class="x-toolbar" position="top">
 									<div class="x-buttongroup">
-										<a href="" class="x-splitbutton"iconCls="icon-add">Menu Button</a>
-										<a href="" class="x-splitbutton"iconCls="icon-cross">Cut</a>
+										<a href="" class="x-splitbutton" iconCls="icon-add">Menu Button</a>
+										<a href="" class="x-splitbutton" iconCls="icon-cross">Cut</a>
 									</div>
 								</div>
-								<div class="x-toolbar" position="left"  style="top:76px;">
-									<a href="" class="x-linkbutton">left</a>
-								</div>
-								<div class="x-toolbar" position="right"  style="top:76px;">
-									<a href="" class="x-linkbutton">right</a>
-								</div>
-								<div class="x-toolbar" position="bottom"  style="text-align:left;">
+								<div class="x-toolbar" position="bottom">
 									<a href="" class="x-linkbutton" plain="true">Toolbar</a>
 									<a href="" class="x-linkbutton">Button</a>
 									<a href="" class="x-menubutton">Menu Button</a>
 									<a href="" class="x-splitbutton">Split Button</a>
-									<a href="javascript:void(0)" class="x-linkbutton" toggle="true">Toggle Button</a>
+									<a href="" class="x-linkbutton">Toggle Button</a>
+								</div>
+								<div class="x-toolbar" position="left">
+									<a href="" class="x-linkbutton">Left</a>
+								</div>
+								<div class="x-toolbar" position="right">
+									<a href="" class="x-linkbutton">RIght</a>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-24" style="margin-bottom:10px;">
-							<div class="x-panel" title="BorderLayout Panel" border="false" collapsible="true" bodyCls="panel-bordered" style="height:350px;padding:8px;">
-								<div class="x-layout" fit="true" border="false">
+						<div class="col-24" style='margin-bottom:10px;'>
+							<div class="x-panel" bodyCls="panel-bordered" title="BorderLayout Panel" border="false" collapsible="true" style="height:350px;padding:8px;">
+								<div class="x-layout" border="false" fit="true">
 									<div region="north" border="false" title="North" split="true" style="height:75px;">North</div>
 									<div region="south" border="false" title="South" split="true" style="height:75px;">South</div>
 									<div region="west" border="false" title="West" split="true" style="width:100px;">West</div>
 									<div region="east" border="false" title="East" split="true" style="width:100px;">East</div>
-									<div region="center" border="false" title="Center" split="true" style="">Center</div>
+									<div region="center" border="false" title="Center" split="true">Center</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-24" style="margin-bottom:10px;">
-							<table class="x-datagrid" border="false" fitColumns="true" title="GridPanel" collapsible="true" pagination="true" sortName="vel" toolbar="#gridToolbar" style="height:200px;">
+						<div class="col-24" style='margin-bottom:10px;'>
+							<table class="x-datagrid" title="GridPanel" url="js/data.json" fitColumns="true" border="false" collapsible="true" pagination="true" striped="true" sortName="data1" toolbar="#gridToolbar" style="height:200px;">
 								<thead>
 									<tr>
-										<th field="vel" sortable="true" width="100">Vel</th>
-										<th field="et" sortable="true" width="100">Et</th>
-										<th field="consequuntur" sortable="true" width="100">Consequuntur</th>
-										<th field="quo" sortable="true" width="100">Quo</th>
-										<th field="aspernatur" sortable="true" width="100">Aspernatur</th>
+										<th field="data1" sortable="true" width="100">Company</th>
+										<th field="data2" sortable="true" width="100">Price</th>
+										<th field="data3" sortable="true" width="100">Change</th>
+										<th field="data4" sortable="true" width="100">% Change</th>
+										<th field="data5" sortable="true" width="100">Last Update</th>
 									</tr>
 								</thead>
-								<tbody>
-									<tr>
-										<td>Qui!</td>
-										<td>Libero!</td>
-										<td>Repudiandae?</td>
-										<td>Ab.</td>
-										<td>Placeat.</td>
-									</tr>
-									<tr>
-										<td>Accusamus.</td>
-										<td>Sequi.</td>
-										<td>Earum!</td>
-										<td>Debitis?</td>
-										<td>Dolorum?</td>
-									</tr>
-									<tr>
-										<td>Libero.</td>
-										<td>At!</td>
-										<td>Molestias.</td>
-										<td>Optio!</td>
-										<td>Qui.</td>
-									</tr>
-									<tr>
-										<td>Officia.</td>
-										<td>Cum.</td>
-										<td>Maiores.</td>
-										<td>Eos.</td>
-										<td>Saepe.</td>
-									</tr>
-								</tbody>
 							</table>
 							<div id="gridToolbar">
 								<div class="row">
-									<div class="col-16">
-										<a href="" class="x-linkbutton">Toolbar</a>
-									</div>
-									<div class="col-8"><input type="text" class="x-searchbox"></div>
+									<div class="col-14"><a href="" class="x-linkbutton">Toolbar</a></div>
+									<div class="col-10"><input type="text" class="x-searchbox"></div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-24" style="margin-bottom:10px;">
-							<div class="x-panel" title="Accordion and TreePanel" border="false" collapsible="true" style="height:240px;">
-								<div class="x-accordion" fit="true" border="false">
+						<div class="col-24" style='margin-bottom:10px;'>
+							<div class="x-panel" title="Accordion and TreePanel" collapsible="true" border="false" style="height:240px;">
+								<div class="x-accordion" fit="true">
 									<div title="TreePanel">
-										<ul class="x-tree" lines="true">
-											<li state=""><span>Root Node</span>
-												<ul>
-													<li state="closed"><span>Lorem</span>
-														<ul>
-															<li><span>Repudiandae</span></li>
-														</ul>
-													</li>
-													<li state="closed"><span>Earum</span>
-														<ul>
-															<li><span>Autem</span></li>
-														</ul>
-													</li>
-													<li state="closed"><span>Enim</span>
-														<ul>
-															<li><span>Odio</span></li>
-														</ul>
-													</li>
-													<li state="closed"><span>Excepturi</span>
-														<ul>
-															<li><span>Ut</span></li>
-														</ul>
-													</li>
-													<li state="closed"><span>Maiores</span>
-														<ul>
-															<li><span>Temporibus</span></li>
-														</ul>
-													</li>
-												</ul>
-											</li>
-											<li state="closed"><span>Commodi</span>
-												<ul>
-													<li><span>Ipsam</span></li>
-												</ul>
-											</li>
-										</ul>
+										<ul class="x-tree" lines="true" url="js/tree.json"></ul>
 									</div>
-									<div title="Item 2">Some content</div>
-									<div title="Item 3">Some content</div>
+									<div title="Item 2"></div>
+									<div title="Item 3"></div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-24" style="margin-bottom:10px;">
-							<div class="x-panel" border="false" title="Progressbar / Slider" style="height:200px;padding:10px 10px 0px 10px;">
-								<div class="x-progressbar" id="progressbar" text="Progressbar text..."></div>
-								<div style="margin-bottom:5px;"></div>
+						<div class="col-24" style='margin-bottom:10px;'>
+							<div class="x-panel" bodyCls="panel-noscroll" title="Accordion and TreePanel" border="false" style="height:200px;padding:5px;">
+								<div class="x-progressbar" id="progressbar" text="Progress Text..." value="50"></div>
 								<div class="x-slider"></div>
-								<div class="x-slider" mode="v" style="height:80px;"></div>
+								<div class="x-slider" mode="v" style="height:90px;"></div>
 							</div>
 						</div>
-					</div>
-					<div class="row">
-						<div class="col-24" style="margin-bottom:10px;">
-							<table class="x-datagrid" border="false" frame="true" fitColumns="true" title="GridPanel" collapsible="true" sortName="vel" style="height:180px;">
+						<div class="col-24" style='margin-bottom:10px;'>
+							<table class="x-datagrid" title="Framed Grid" url="js/data.json" fitColumns="true" border="false" frame="true" collapsible="true" striped="true" sortName="data1" style="height:180px;">
 								<thead>
 									<tr>
-										<th field="vel" sortable="true" width="300">Vel</th>
-										<th field="et" sortable="true" width="100">Et</th>
-										<th field="consequ" sortable="true" width="100">Consequ</th>
+										<th field="data1" sortable="true" width="300">Company</th>
+										<th field="data2" sortable="true" width="100">Price</th>
+										<th field="data3" sortable="true" width="100">Change</th>
 									</tr>
 								</thead>
-								<tbody>
-									<tr>
-										<td>Impedit.</td>
-										<td>Aspernatur?</td>
-										<td>Nulla.</td>
-									</tr>
-									<tr>
-										<td>Facilis.</td>
-										<td>Ullam!</td>
-										<td>Nulla!</td>
-									</tr>
-									<tr>
-										<td>Ipsum.</td>
-										<td>Eum.</td>
-										<td>Odio!</td>
-									</tr>
-									<tr>
-										<td>Impedit.</td>
-										<td>Quam.</td>
-										<td>Incidunt.</td>
-									</tr>
-									<tr>
-										<td>Incidunt.</td>
-										<td>Magni.</td>
-										<td>Minima.</td>
-									</tr>
-								</tbody>
 							</table>
 						</div>
 					</div>
@@ -417,46 +321,23 @@
 			</div>
 		</div>
 	</div>
-	<div id="theme" style="display:inline-block;background:#fff;padding:6px;box-shadow:rgba(136, 136, 136, .75) 0px 2px 6px;position:fixed;top:0;right:20px;z-index:1001;">
-		<label>Themes:</label>
-		<select class="x-combobox" id="theme-selector" style="width:120px !important;">
-			<option value="neptune.css">Neptune</option>
-			<option value="grapefruit.css">Grapefruit</option>
-			<option value="bittersweet.css">Bittersweet</option>
-			<option value="sunflower.css">Sunflower</option>
-			<option value="grass.css">Grass</option>
-			<option value="mint.css">Mint</option>
-			<option value="aqua.css">Aqua</option>
-			<option value="jeans.css">Jeans</option>
-			<option value="lavender.css">Lavender</option>
-			<option value="rose.css">Rose</option>
-			<option value="dark.css">Dark</option>
-		</select>
-		<div id="theme-close" style="height:24px;padding:4px;display:inline-block;vertical-align:middle;opacity:0.7;">
-			<div class="icon-close icon-dark"></div>
-		</div>
-	</div>
-    <script src="js/jquery.js"></script>
-    <script src="js/easyui.js"></script>
-    <script>
-    	var value = 0;
-    	window.setInterval(function() {
-    		value += 10;
-    		$('#progressbar').progressbar("setValue", value);
-    		if (value == 100) { value = 0; };
-    	}, 500);
-    	var a = $('#theme');
-    	var b = $('#theme-selector');
-    	var c = $('#theme-close');
-    	b.combobox({
-    		onSelect: function(e) {
-    			$('link').attr('href', 'css/'+e.value);
-    		}
-    	});
-    	c.bind('click', function(e) {
-    		a.remove();
-    		e.preventDefault();
-    	});
-    </script>
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="js/jquery.easyui.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+	var timer = 0;
+	$.fn.pagination.defaults.displayMsg = '{from} - {to} of {total}';
+	window.setInterval(function() {
+		timer += 10;
+		$('#progressbar').progressbar('setValue', timer);
+		if (timer == 100) {
+			timer = 0;
+		};
+	}, 500);
+	$('#theme img').bind("click", function() {
+		var style = $(this).attr("alt");
+		$('link').attr("href", "css/"+style+".css");
+	});
+</script>
 </body>
 </html>

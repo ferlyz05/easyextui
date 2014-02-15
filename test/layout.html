@@ -5,13 +5,32 @@
     <title>Untitled</title>
     <link rel="stylesheet" href="../css/easyui.css">
 </head>
-<body class="x-layout" border="false">
-	<div region="north" border="false" title="North" split="true" style="height:100px;"></div>
-	<div region="south" border="false" title="South" split="true" style="height:100px;"></div>
-	<div region="west" border="false" title="West" split="true" style="width:250px;"></div>
-	<div region="east" border="false" title="East" split="true" style="width:250px;"></div>
-	<div region="center" border="false" title="Center" split="true" style="height:auto;"></div>
-    <script src="../js/jquery.js"></script>
-    <script src="../js/easyui.js"></script>
+<body style="margin:36px 0;">
+	<div class="row">
+		<div class="col-20 push-2">
+			<div class="row">
+				<div class="col-12">
+					<div class="x-layout" style="height:350px;">
+						<div region="north" title="North" split="true" style="height:100px;"></div>
+						<div region="south" title="South" split="true" style="height:100px;"></div>
+						<div region="west" title="West" split="true" style="width:150px;"></div>
+						<div region="east" title="East" split="true" style="width:150px;"></div>
+						<div region="center" title="Center" split="true"></div>
+					</div>
+				</div>
+				<div class="col-12">
+					<div class="x-layout" border="false" style="height:350px;">
+						<div region="north" border="false" title="North" split="true" style="height:100px;"></div>
+						<div region="south" border="false" title="South" split="true" style="height:100px;"></div>
+						<div region="west" border="false" title="West" split="true" style="width:150px;"></div>
+						<div region="east" border="false" title="East" split="true" style="width:150px;"></div>
+						<div region="center" border="false" title="Center" split="true"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <script src="../js/jquery-1.8.0.min.js"></script>
+    <script src="../js/jquery.easyui.min.js"></script>
 </body>
 </html>

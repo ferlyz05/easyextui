@@ -5,110 +5,102 @@
     <title>Untitled</title>
     <link rel="stylesheet" href="../css/easyui.css">
 </head>
-<body style="margin:1.618em;">
+<body style="margin:36px 0;">
 	<div class="row">
 		<div class="col-20 push-2">
 			<div class="row">
-				<div class="col-12" style="margin-bottom:10px;">
+				<div class="col-8" style="margin-bottom:10px;">
 					<form>
 						<div class="row" style="margin-bottom:5px;">
-							<div class="col-5"><label>TextField</label></div>
-							<div class="col-19"><input type="text"></div>
+							<div class="col-6"><label>TextField</label></div>
+							<div class="col-18"><input type="text"></div>
 						</div>
 						<div class="row" style="margin-bottom:5px;">
-							<div class="col-5"><label>TextField</label></div>
-							<div class="col-19"><input type="text"></div>
+							<div class="col-6"><label>ComboBox</label></div>
+							<div class="col-18"><input type="text" class="x-combobox"></div>
 						</div>
 						<div class="row" style="margin-bottom:5px;">
-							<div class="col-5"><label>Validatebox</label></div>
-							<div class="col-19"><input type="text" required="true" class="x-validatebox"></div>
+							<div class="col-6"><label>DateField</label></div>
+							<div class="col-18"><input type="text" class="x-datebox"></div>
 						</div>
 						<div class="row" style="margin-bottom:5px;">
-							<div class="col-5"><label>Combobox</label></div>
-							<div class="col-19"><input type="text" class="x-combobox"></div>
+							<div class="col-6"><label>TimeField</label></div>
+							<div class="col-18"><input type="text" class="x-timespinner"></div>
 						</div>
 						<div class="row" style="margin-bottom:5px;">
-							<div class="col-5"><label>Numberbox</label></div>
-							<div class="col-19"><input type="text" class="x-numberbox"></div>
+							<div class="col-6"><label>NumberField</label></div>
+							<div class="col-18"><input type="text" class="x-numberspinner"></div>
 						</div>
 						<div class="row" style="margin-bottom:5px;">
-							<div class="col-5"><label>Datebox</label></div>
-							<div class="col-19"><input type="text" class="x-datebox"></div>
+							<div class="col-6"><label>TextArea</label></div>
+							<div class="col-18"><textarea rows="5"></textarea></div>
 						</div>
 						<div class="row" style="margin-bottom:5px;">
-							<div class="col-5"><label>Numberspinner</label></div>
-							<div class="col-19"><input type="text" class="x-numberspinner"></div>
-						</div>
-						<div class="row" style="margin-bottom:5px;">
-							<div class="col-5"><label>Timespinner</label></div>
-							<div class="col-19"><input type="text" class="x-timespinner"></div>
-						</div>
-						<div class="row" style="margin-bottom:5px;">
-							<div class="col-5"><label>Radio</label></div>
-							<div class="col-19">
-								<input type="radio" title="Foo" name="radio">
-								<input type="radio" title="Bar" name="radio">
+							<div class="col-6"><label>Radio</label></div>
+							<div class="col-18">
+								<input type="radio" title="Radio">
 							</div>
 						</div>
 						<div class="row" style="margin-bottom:5px;">
-							<div class="col-5"><label>Checkbox</label></div>
-							<div class="col-19">
-								<input type="checkbox" title="Foo">
-								<input type="checkbox" title="Bar">
+							<div class="col-6"><label>Checkbox</label></div>
+							<div class="col-18">
+								<input type="checkbox" title="Checkbox">
 							</div>
 						</div>
 					</form>
 				</div>
-				<div class="col-12" style="margin-bottom:10px;">
-					<div class="x-panel" title="Form" border="false" style="height:500px;padding:10px;">
-						<form>
-							<div class="row" style="margin-bottom:5px;">
-								<div class="col-4"><label>TextField</label></div>
-								<div class="col-20"><input type="text"></div>
-							</div>
-							<div class="row" style="margin-bottom:5px;">
-								<div class="col-4"><label>TextField</label></div>
-								<div class="col-20"><input type="text"></div>
-							</div>
-							<div class="row" style="margin-bottom:5px;">
-								<div class="col-24">
-									<fieldset>
-										<legend>Form Legend</legend>
-										<div class="row" style="margin-bottom:5px;">
-											<div class="col-4"><label>TextField</label></div>
-											<div class="col-20"><input type="text"></div>
-										</div>
-									</fieldset>
-								</div>
-							</div>
-							<div class="row" style="margin-bottom:5px;">
-								<div class="col-24">
-									<fieldset>
-										<legend>Form Legend</legend>
-										<div class="row" style="margin-bottom:5px;">
-											<div class="col-5"><label>Radio</label></div>
-											<div class="col-19">
-												<input type="radio" title="Foo" name="radio1">
-												<input type="radio" title="Bar" name="radio1">
-											</div>
-										</div>
-										<div class="row" style="margin-bottom:5px;">
-											<div class="col-5"><label>Checkbox</label></div>
-											<div class="col-19">
-												<input type="checkbox" title="Foo">
-												<input type="checkbox" title="Bar">
-											</div>
-										</div>
-									</fieldset>
-								</div>
-							</div>
-						</form>
-					</div>
+				<div class="col-8" style="margin-bottom:10px;">
+					<form>
+						<div class="row" style="margin-bottom:5px;">
+							<div class="col-6"><label>TextField</label></div>
+							<div class="col-18"><input type="text" class="x-validatebox" required="true"></div>
+						</div>
+						<div class="row" style="margin-bottom:5px;">
+							<div class="col-6"><label>ComboBox</label></div>
+							<div class="col-18"><input type="text" class="x-combobox x-validatebox" required="true"></div>
+						</div>
+						<div class="row" style="margin-bottom:5px;">
+							<div class="col-6"><label>DateField</label></div>
+							<div class="col-18"><input type="text" class="x-datebox x-validatebox" required="true"></div>
+						</div>
+						<div class="row" style="margin-bottom:5px;">
+							<div class="col-6"><label>TimeField</label></div>
+							<div class="col-18"><input type="text" class="x-timespinner x-validatebox" required="true"></div>
+						</div>
+						<div class="row" style="margin-bottom:5px;">
+							<div class="col-6"><label>NumberField</label></div>
+							<div class="col-18"><input type="text" class="x-numberspinner x-validatebox" required="true"></div>
+						</div>
+						<div class="row" style="margin-bottom:5px;">
+							<div class="col-6"><label>TextArea</label></div>
+							<div class="col-18"><textarea rows="5" class="x-validatebox" required="true"></textarea></div>
+						</div>
+					</form>
+				</div>
+				<div class="col-8" style="margin-bottom:10px;">
+					<form>
+						<div class="row" style="margin-bottom:5px;">
+							<div class="col-6"><label>SearchBox</label></div>
+							<div class="col-18"><input type="text" class="x-searchbox"></div>
+						</div>
+						<div class="row" style="margin-bottom:5px;">
+							<div class="col-6"><label>NumberBox</label></div>
+							<div class="col-18"><input type="text" class="x-numberbox"></div>
+						</div>
+						<div class="row" style="margin-bottom:5px;">
+							<div class="col-6"><label>Slider</label></div>
+							<div class="col-18"><div class="x-slider" min="10" max="90" step="10"></div></div>
+						</div>
+						<div class="row" style="margin-bottom:5px;">
+							<div class="col-6"><label>SliderVertical</label></div>
+							<div class="col-18"><div class="x-slider" min="10" max="90" step="10" mode="v" style="height:125px;"></div></div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
 	</div>
-    <script src="../js/jquery.js"></script>
-    <script src="../js/easyui.js"></script>
+    <script src="../js/jquery-1.8.0.min.js"></script>
+    <script src="../js/jquery.easyui.min.js"></script>
 </body>
 </html>
