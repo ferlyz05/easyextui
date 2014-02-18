@@ -2286,6 +2286,24 @@ legend {
 .propertygrid .datagrid-group, .propertygrid .datagrid-view1 .datagrid-body, .propertygrid .datagrid-view1 .datagrid-row-over, .propertygrid .datagrid-view1 .datagrid-row-selected {
   background: white; }
 
+.datagrid-cell.undefined {
+  padding: 0;
+  width: 24px;
+  height: 24px !important;
+  padding: 6.5px; }
+
+.datagrid-row-expand {
+  background: url(../img/group-expand.png) no-repeat center center; }
+
+.datagrid-row-collapse {
+  background: url(../img/group-collapse.png) no-repeat center center; }
+
+.datagrid-row-expand,
+.datagrid-row-collapse {
+  height: 11px !important;
+  width: 11px !important;
+  vertical-align: top; }
+
 .pagination {
   zoom: 1;
   background: white;
@@ -2801,13 +2819,13 @@ legend {
   height: 22px;
   line-height: 22px;
   float: left;
-  padding-left: 30px; }
+  padding-left: 25px; }
 
 .menu-icon {
   position: absolute;
   width: 16px;
   height: 16px;
-  left: 2px;
+  left: 3px;
   top: 50%;
   margin-top: -8px; }
 
@@ -2827,7 +2845,7 @@ legend {
   font-size: 1px; }
 
 .menu-sep {
-  margin: 3px 0 3px 25px;
+  margin: 3px 0;
   font-size: 1px; }
 
 .menu-item-disabled {
@@ -2846,12 +2864,8 @@ legend {
   -o-box-shadow: rgba(136, 136, 136, 0.6) 0 1px 3px;
   box-shadow: rgba(136, 136, 136, 0.6) 0 1px 3px; }
 
-.menu-line {
-  border-left: 1px solid #e1e1e1; }
-
 .menu-sep {
-  border-top: 1px solid #b3b3b3;
-  border-bottom: 1px solid white; }
+  border-top: 1px solid #e1e1e1; }
 
 .menu {
   background-color: white;
@@ -2926,7 +2940,8 @@ legend {
 .dialog-button .s-btn.m-btn-large .l-btn-icon-bottom .m-btn-downarrow, .dialog-button .s-btn.m-btn-large .l-btn-icon-top .m-btn-downarrow {
   background-image: url(../img/default-large-s-arrow-b.png); }
 
-.m-btn-downarrow {
+.m-btn-downarrow,
+.m-btn-line {
   background-position: right center;
   background-repeat: no-repeat;
   display: inline-block;
@@ -2939,13 +2954,15 @@ legend {
   font-size: 0;
   line-height: 0; }
 
-.m-btn-medium .m-btn-downarrow {
+.m-btn-medium .m-btn-downarrow,
+.m-btn-medium .m-btn-line {
   height: 24px;
   width: 24px;
   margin-top: -11.5px;
   line-height: 24px; }
 
-.m-btn-large .m-btn-downarrow {
+.m-btn-large .m-btn-downarrow,
+.m-btn-large .m-btn-line {
   height: 32px;
   width: 32px;
   margin-top: -14.5px;
@@ -3111,16 +3128,13 @@ legend {
 .messager-question {
   background: url(../img/icon-question.png) no-repeat center center; }
 
-.messager-progress {
-  padding: 10px; }
-
 .messager-p-msg {
-  margin-bottom: 5px; }
+  font-size: 13px;
+  line-height: 24px;
+  margin-bottom: 10px; }
 
 .messager-body .messager-input {
-  width: 100%;
-  padding: 1px 0;
-  border: 1px solid #b3b3b3; }
+  width: 100%; }
 
 .tree {
   margin: 0;
@@ -3597,3 +3611,29 @@ legend {
 
 .icon-32 {
   background: url(../icon/32.png) no-repeat center center; }
+
+.vertical {
+  width: 100%; }
+
+.vertical:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  height: 100%;
+  margin-left: -0.35714em; }
+
+.align-top, .align-middle, .align-bottom {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  max-width: 100%; }
+
+.align-top {
+  vertical-align: top; }
+
+.align-middle {
+  vertical-align: middle; }
+
+.align-bottom {
+  vertical-align: bottom; }

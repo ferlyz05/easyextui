@@ -10,7 +10,7 @@
 	<div class="col-20 push-2">
 		<div class="row">
 			<div class="col-12" style="margin-bottom:10px;">
-				<table class="x-datagrid" sortName="data1" striped="true" rownumbers="true" fitColumns="true" url="../js/data.json" style="height:250px;width:553px;">
+				<table class="x-datagrid" id="data" sortName="data1" striped="true" rownumbers="true" fitColumns="true" url="../js/data.json" style="height:250px;width:553px;">
 					<thead>
 						<tr>
 							<th field="data1" width="100" sortable="true">Deserunt</th>
@@ -62,6 +62,19 @@
 				</table>
 			</div>
 			<div class="col-12" style="margin-bottom:10px;">
+				<table class="x-datagrid" id="xyx" title="Datagrid" striped="true" fitColumns="true" url="../js/data.json" border="false" style="height:250px;width:553px;">
+					<thead>
+						<tr>
+							<th field="data1" width="100">Deserunt</th>
+							<th field="data2" width="100">Eaque</th>
+							<th field="data3" width="100">Sint</th>
+							<th field="data4" width="100">Exercitationem</th>
+							<th field="data5" width="100">Reiciendis</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+			<div class="col-12" style="margin-bottom:10px;">
 				<table class="x-datagrid" toolbar="#tb1" sortName="data1" title="Datagrid" pagination="true" striped="true" rownumbers="true" fitColumns="true" url="../js/data.json" style="height:250px;width:553px;">
 					<thead>
 						<tr>
@@ -96,7 +109,15 @@
 		</div>
 	</div>
 </div>
-<script src="../js/jquery-1.8.0.min.js"></script>
+<script src="../js/jquery-1.11.0.min.js"></script>
 <script src="../js/jquery.easyui.min.js"></script>
+<script>
+	$('#xyx').datagrid({
+		detailView: true,
+		detailFormatter: function(row, index) {
+			return '<p style="padding:10px;margin:0px;"><strong>'+index.data1+'</strong></p>';
+		}
+	});
+</script>
 </body>
 </html>

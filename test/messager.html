@@ -5,15 +5,65 @@
     <title>Untitled</title>
     <link rel="stylesheet" href="../css/easyui.css">
 </head>
-<body>
+<body style="margin:36px 0;">
+    <div class="row">
+        <div class="col-20 push-2">
+            <div class="x-linkbutton" onclick="javascript:messager();">Alert</div>
+            <div class="x-linkbutton" onclick="javascript:question();">Question</div>
+            <div class="x-linkbutton" onclick="javascript:info();">Info</div>
+            <div class="x-linkbutton" onclick="javascript:warning();">Warning</div>
+            <div class="x-linkbutton" onclick="javascript:error();">Error</div>
+            <div style="height:10px;"></div>
+            <div class="x-linkbutton" onclick="javascript:confirm();">Confirm</div>
+            <div class="x-linkbutton" onclick="javascript:prompt();">Prompt</div>
+            <div class="x-linkbutton" onclick="javascript:progress();">Progress</div>
+        </div>
+    </div>
     <script src="../js/jquery-1.8.0.min.js"></script>
     <script src="../js/jquery.easyui.min.js"></script>
     <script>
-    	$.messager.alert("Title", "Lorem ipsum dolor sit amet.");
-    	$.messager.alert("Title", "Lorem ipsum dolor sit amet.", "question");
-    	$.messager.alert("Title", "Lorem ipsum dolor sit amet.", "info");
-    	$.messager.alert("Title", "Lorem ipsum dolor sit amet.", "warning");
-    	$.messager.alert("Title", "Lorem ipsum dolor sit amet.", "error");
+    	function messager() {
+            return $.messager.alert("Title", "Lorem ipsum dolor sit amet.");
+        }
+    	function question() {
+            return $.messager.alert("Title", "Lorem ipsum dolor sit amet.", "question");
+        }
+    	function info() {
+            return $.messager.alert("Title", "Lorem ipsum dolor sit amet.", "info");
+        }
+    	function warning() {
+            return $.messager.alert("Title", "Lorem ipsum dolor sit amet.", "warning");
+        }
+    	function error() {
+            return $.messager.alert("Title", "Lorem ipsum dolor sit amet.", "error");
+        }
+        function confirm() {
+            return $.messager.confirm("Title", "Lorem ipsum dolor sit amet.", function(r) {
+                window.alert(r);
+            });
+        }
+        function prompt() {
+            return $.messager.prompt("Title", "Lorem ipsum dolor sit amet.", function(r) {
+                window.alert(r);
+            });
+        }
+        function progress() {
+            $.messager.progress({ title: "Title", msg: "Lorem ipsum dolor sit amet."});
+            var interval = window.setInterval(function() {
+                $.messager.progress("close");    
+                window.clearInterval(interval);
+            }, 3200);
+        }
+        $.messager.show({
+            title:'Title',
+            msg: 'Lorem ipsum dolor sit amet.',
+            style:{
+                right: "",
+                top: "",
+                bottom: 10,
+                left: 10
+            }
+        });
     </script>
 </body>
 </html>
